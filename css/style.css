@@ -199,7 +199,7 @@ a { text-decoration: none; }
 }
 .brand-name {
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: var(--white);
   line-height: 1.1;
