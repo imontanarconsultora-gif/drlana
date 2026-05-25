@@ -740,11 +740,35 @@ a { text-decoration: none; }
 }
 .modality-home .modality-title { color: var(--white); }
 .modality-clinic .modality-title { color: var(--brand-dark); }
+.modality-subtitle-tag {
+  font-size: .8rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .07em;
+  margin-bottom: .9rem;
+}
+.modality-home .modality-subtitle-tag { color: var(--brand-accent); }
+.modality-clinic .modality-subtitle-tag { color: var(--brand-mid); }
 .modality-desc {
-  font-size: .95rem; line-height: 1.7; margin-bottom: 1.5rem;
+  font-size: .93rem; line-height: 1.72; margin-bottom: .85rem;
 }
 .modality-home .modality-desc { color: var(--brand-muted); }
 .modality-clinic .modality-desc { color: var(--gray-500); }
+.modality-note {
+  font-size: .82rem; font-weight: 500;
+  font-style: italic;
+  margin-bottom: 1.25rem;
+  padding: .5rem .85rem;
+  border-radius: var(--radius-sm);
+}
+.modality-home .modality-note {
+  color: rgba(255,255,255,.65);
+  background: rgba(255,255,255,.08);
+  border-left: 2px solid var(--brand-accent);
+}
+.modality-clinic .modality-note {
+  color: var(--brand-mid);
+  background: var(--brand-light);
+  border-left: 2px solid var(--brand-accent);
+}
 .modality-list {
   list-style: none; padding: 0; margin: 0 0 1.75rem;
   display: flex; flex-direction: column; gap: .65rem;
