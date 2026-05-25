@@ -439,23 +439,38 @@ a { text-decoration: none; }
 }
 
 /* ── ABOUT ───────────────────────────────────────────── */
-.about-id-card {
-  background: var(--white);
-  border: 1px solid var(--gray-100);
-  border-radius: var(--radius-lg);
-  padding: 1.25rem 1.5rem;
-  box-shadow: var(--shadow-sm);
+.about-photo-card {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  background: var(--brand-dark);
 }
-.about-avatar {
-  width: 56px; height: 56px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--brand-mid), var(--brand-accent));
-  display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0;
+.about-photo {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  max-height: 520px;
+  opacity: .95;
+  transition: opacity .3s ease;
 }
-.about-avatar span {
+.about-photo-card:hover .about-photo { opacity: 1; }
+.about-photo-caption {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 1.5rem 1.25rem 1.1rem;
+  background: linear-gradient(to top, rgba(26,58,92,.92) 0%, transparent 100%);
+  display: flex; flex-direction: column; gap: .15rem;
+}
+.about-photo-caption strong {
+  color: #fff;
+  font-size: 1rem;
   font-family: var(--font-display);
-  font-size: 1.1rem; font-weight: 700; color: var(--white);
+}
+.about-photo-caption span {
+  color: var(--brand-muted);
+  font-size: .78rem;
 }
 .about-quote {
   font-family: var(--font-display);
