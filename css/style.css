@@ -28,7 +28,7 @@
   --shadow-lg:     0 12px 44px rgba(26,58,92,.18);
   --shadow-xl:     0 20px 64px rgba(0,0,0,.22);
   --transition:    all .25s ease;
-  --nav-h:         68px;
+  --nav-h:         90px;
 }
 
 /* ── BASE ───────────────────────────────────────────── */
@@ -206,16 +206,16 @@ a { text-decoration: none; }
 }
 .brand-sub { font-size: .7rem; color: var(--brand-muted); }
 .navbar-logo {
-  height: 52px;
+  height: 78px;
   width: auto;
   display: block;
   background: #fff;
-  border-radius: 10px;
-  padding: 3px 8px;
-  transition: opacity .2s ease;
+  border-radius: 12px;
+  padding: 4px 10px;
+  transition: height .3s ease, opacity .2s ease;
 }
 .navbar-logo:hover { opacity: .9; }
-.site-navbar.scrolled .navbar-logo { height: 44px; }
+.site-navbar.scrolled .navbar-logo { height: 62px; }
 .nav-link-site {
   color: var(--brand-muted) !important;
   font-size: .9rem;
@@ -484,7 +484,7 @@ a { text-decoration: none; }
   font-size: .78rem;
 }
 .about-logo {
-  max-width: 220px;
+  max-width: 300px;
   height: auto;
   display: block;
 }
@@ -537,6 +537,13 @@ a { text-decoration: none; }
   border: 1px solid var(--brand-muted);
 }
 .about-rotation-badge i { color: var(--brand-mid); font-size: .85rem; }
+.about-rotation-badge--primary {
+  background: var(--brand-mid);
+  color: var(--white);
+  border-color: var(--brand-mid);
+  font-weight: 600;
+}
+.about-rotation-badge--primary i { color: var(--brand-muted); }
 
 /* ── ZONA ────────────────────────────────────────────── */
 .zona-map-box {
