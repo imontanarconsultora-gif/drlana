@@ -205,6 +205,17 @@ a { text-decoration: none; }
   line-height: 1.1;
 }
 .brand-sub { font-size: .7rem; color: var(--brand-muted); }
+.navbar-logo {
+  height: 52px;
+  width: auto;
+  display: block;
+  background: #fff;
+  border-radius: 10px;
+  padding: 3px 8px;
+  transition: opacity .2s ease;
+}
+.navbar-logo:hover { opacity: .9; }
+.site-navbar.scrolled .navbar-logo { height: 44px; }
 .nav-link-site {
   color: var(--brand-muted) !important;
   font-size: .9rem;
@@ -471,6 +482,11 @@ a { text-decoration: none; }
 .about-photo-caption span {
   color: var(--brand-muted);
   font-size: .78rem;
+}
+.about-logo {
+  max-width: 220px;
+  height: auto;
+  display: block;
 }
 .about-quote {
   font-family: var(--font-display);
